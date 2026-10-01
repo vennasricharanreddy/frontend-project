@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise - Expenses</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body data-page="expenses">
+
+    <nav>
+
+        <h2>SplitWise</h2>
+
+        <div class="nav-buttons">
+            <button data-go="dashboard.html">Dashboard</button>
+            <button data-go="group.html">Groups</button>
+            <button data-go="expense.html">Expenses</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>Expenses</h1>
+
+        <div class="section">
+
+            <label>Select Group</label>
+
+            <select id="expenseGroup"></select>
+
+            <h2>Add Expense</h2>
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense name"
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+                min="1"
+            >
+
+            <label>Paid By</label>
+
+            <select id="paidBy"></select>
+
+            <h3>Split Between</h3>
+
+            <div id="participants"></div>
+
+            <button id="addExpenseBtn">Add Expense</button>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Expense History</h2>
+
+            <div id="expenseList"></div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Who Owes Whom</h2>
+
+            <div id="balanceList"></div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+
+</body>
+</html>

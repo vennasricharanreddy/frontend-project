@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise - Sign Up</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body data-page="signup">
+
+    <div class="auth-page">
+
+        <div class="auth-card">
+
+            <h1>SplitWise</h1>
+            <p class="subtitle">Create your account</p>
+
+            <form id="signupForm">
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p id="signupMessage"></p>
+
+            <p class="switch">
+                Already have an account?
+                <a href="/index.html">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
+
+</body>
+</html>

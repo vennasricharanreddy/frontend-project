@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise - Admin</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body data-page="admin">
+
+    <nav>
+
+        <h2>SplitWise Admin</h2>
+
+        <button id="logoutBtn">Logout</button>
+
+    </nav>
+
+    <main>
+
+        <h1>Admin Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Users</h3>
+                <p id="adminUsers">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Groups</h3>
+                <p id="adminGroups">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Expenses</h3>
+                <p id="adminExpenses">0</p>
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Registered Users</h2>
+
+            <div id="userList"></div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Groups</h2>
+
+            <div id="adminGroupList"></div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Expense Records</h2>
+
+            <div id="adminExpenseList"></div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+
+</body>
+</html>

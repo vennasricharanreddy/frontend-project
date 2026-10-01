@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f3eb;
+    color: #292929;
+}
+
+button {
+    border: none;
+    background: #e7b93c;
+    color: #222;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d7a92d;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d7d3c8;
+    border-radius: 7px;
+    background: white;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #e7b93c;
+}
+
+a {
+    color: #806300;
+    text-decoration: none;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: #fffdf8;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.auth-card h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card button {
+    margin-top: 8px;
+}
+
+.switch {
+    margin-top: 20px;
+    color: #666;
+}
+
+.admin-info {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+#loginMessage,
+#signupMessage,
+#memberMessage {
+    color: #b3261e;
+    margin: 12px 0;
+}
+
+nav {
+    background: #fffdf8;
+    border-bottom: 1px solid #e4dfd2;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #222;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-buttons button {
+    padding: 8px 13px;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+main > h1 {
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #e4dfd2;
+}
+
+.card h3 {
+    color: #6d6d6d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b88c00;
+}
+
+.section {
+    background: #fffdf8;
+    padding: 25px;
+    margin-top: 22px;
+    border-radius: 10px;
+    border: 1px solid #e4dfd2;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+.item {
+    background: #faf8f2;
+    border: 1px solid #e5e1d8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.item button {
+    margin-top: 8px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.success {
+    color: #4f704f;
+}
+
+.warning {
+    color: #9b7400;
+}
+
+.danger {
+    color: #a83a32;
+}
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .auth-card {
+        padding: 25px;
+    }
+}

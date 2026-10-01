@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise - Groups</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body data-page="groups">
+
+    <nav>
+
+        <h2>SplitWise</h2>
+
+        <div class="nav-buttons">
+            <button data-go="dashboard.html">Dashboard</button>
+            <button data-go="group.html">Groups</button>
+            <button data-go="expense.html">Expenses</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>My Groups</h1>
+
+        <div class="section">
+
+            <h2>Create Group</h2>
+
+            <form id="groupForm">
+
+                <input
+                    type="text"
+                    id="groupName"
+                    placeholder="Group name"
+                    required
+                >
+
+                <button type="submit">Create Group</button>
+
+            </form>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Add Member</h2>
+
+            <select id="memberGroup"></select>
+
+            <input
+                type="email"
+                id="memberEmail"
+                placeholder="Member email"
+            >
+
+            <button id="addMemberBtn">Add Member</button>
+
+            <p id="memberMessage"></p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Groups</h2>
+
+            <div id="groupList"></div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+
+</body>
+</html>

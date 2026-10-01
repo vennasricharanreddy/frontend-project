@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise - Dashboard</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body data-page="dashboard">
+
+    <nav>
+
+        <h2>SplitWise</h2>
+
+        <div class="nav-buttons">
+            <button data-go="dashboard.html">Dashboard</button>
+            <button data-go="group.html">Groups</button>
+            <button data-go="expense.html">Expenses</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1 id="welcome">Welcome</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>My Groups</h3>
+                <p id="groupCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>You Owe</h3>
+                <p id="oweAmount">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>You Get</h3>
+                <p id="getAmount">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Expenses</h3>
+                <p id="expenseCount">0</p>
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Pending Payments</h2>
+
+            <div id="reminders"></div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Recent Expenses</h2>
+
+            <div id="recentExpenses"></div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+
+</body>
+</html>
