@@ -22,7 +22,7 @@ function getCurrentUser() {
 
 
 function go(page) {
-    window.location.href = "/" + page;
+    window.location.href =  page;
 }
 
 
